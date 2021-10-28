@@ -18,8 +18,6 @@ public class checkpackage extends JFrame {
                 "5star hotel stay","Full 2 days Isaland Cruise","English speaking Guide",
                 "BOOK NOW","HOLIDAY SPECIAL","Rs 42000/-","icons/package3.jpg"};
 
-        //Tab banava mate , ex. aa run krine jovo
-
         JTabbedPane pane= new JTabbedPane();
 
         JPanel p1= createPackage(package1);
@@ -112,7 +110,6 @@ public class checkpackage extends JFrame {
         JLabel l12= new JLabel(i3);
         l12.setBounds(310,0,500,300);
         p1.add(l12);
-
 
         return p1;
 
