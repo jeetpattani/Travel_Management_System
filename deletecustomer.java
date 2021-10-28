@@ -9,8 +9,9 @@ public class deletecustomer extends JFrame {
 
     private JPanel contentPane;
     Choice c1;
-
-    deletecustomer() throws SQLException {
+    String username;
+    
+    deletecustomer(String user) throws SQLException {
 setBounds(220,150,850,540);
 
         contentPane = new JPanel();
@@ -194,7 +195,7 @@ setBounds(220,150,850,540);
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    deletecustomer frame = new deletecustomer();
+                    deletecustomer frame = new deletecustomer("");
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
