@@ -13,7 +13,7 @@ public class signup extends JFrame implements ActionListener {
 
     signup(){
         setBounds(430,200,780,400);
-        getContentPane().setBackground(Color.WHITE); //whole panel ne target kare aa
+        getContentPane().setBackground(Color.WHITE); //Target whole panel
         setLayout(null);
 
         JPanel p1 = new JPanel();
@@ -66,7 +66,7 @@ public class signup extends JFrame implements ActionListener {
         l4.setBounds(40,170,130,25);
         p1.add(l4);
 
-        // comboBox / choice banne thi dropdownMenu bane
+        //For dropdownmenu we can create by using comboBox / Choice
         c1 = new Choice();
         c1.add("Your favourite cartoon name");
         c1.add("Your First crush name");
@@ -86,7 +86,6 @@ public class signup extends JFrame implements ActionListener {
         t4.setBorder(BorderFactory.createEmptyBorder());
         add(t4);
 
-        //Image mate
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/signup.png"));
         JLabel l6 = new JLabel(i1);
         l6.setBounds(520,55,200,200);
@@ -97,7 +96,6 @@ public class signup extends JFrame implements ActionListener {
         b1.setForeground(new Color(133,193,233));
         b1.setBackground(Color.WHITE);
         b1.setFont(new Font("Tahoma", Font.BOLD,14));
-//        b1.setBorder(BorderFactory.createEmptyBorder());
         b1.addActionListener(this);
         p1.add(b1);
 
@@ -106,7 +104,6 @@ public class signup extends JFrame implements ActionListener {
         b2.setForeground(new Color(133,193,233));
         b2.setBackground(Color.WHITE);
         b2.setFont(new Font("Tahoma", Font.BOLD,14));
-//        b2.setBorder(BorderFactory.createEmptyBorder());
         b2.addActionListener(this);
         p1.add(b2);
     }
@@ -121,7 +118,6 @@ public class signup extends JFrame implements ActionListener {
             String security = c1.getSelectedItem();
             String answer = t4.getText();
 
-//            String query = "insert into account values('"+username+"','"+name+"','"+password+"','"+security+"','"+answer+"')";
             try{
                 String query = "insert into account values('"+username+"','"+name+"','"+password+"','"+security+"','"+answer+"')";
 
