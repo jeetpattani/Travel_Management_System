@@ -80,11 +80,6 @@ public  class login extends JFrame implements ActionListener {
         b3.setBounds(70,248,215,30);
         b3.addActionListener(this);
         p2.add(b3);
-
-//        JLabel l4= new JLabel("Trouble in Login..");
-//        l4.setBounds(300,250,100,20);
-//        p2.add(l4);
-
         setVisible(true);
     }
 
