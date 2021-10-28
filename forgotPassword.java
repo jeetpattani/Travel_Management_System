@@ -46,12 +46,7 @@ public class forgotPassword extends JFrame implements ActionListener {
         l3.setBounds(30,120,220,25);
         l3.setFont(new Font("Tahoma",Font.BOLD,14));
         p.add(l3);
-//        c1 = new Choice();
-//        c1.add("Your favourite cartoon name");
-//        c1.add("Your First crush name");
-//        c1.add("Your lucky number");
-//        c1.setBounds(255,120,230,25);
-//        p.add(c1);
+
         t3= new JTextField();
         t3.setBounds(210,120,230,25);
         t3.setBorder(BorderFactory.createEmptyBorder());
@@ -130,10 +125,9 @@ public class forgotPassword extends JFrame implements ActionListener {
         else if(ae.getSource() == b2) {
             try {
                 String sql = "select * from account where answer = '" + t4.getText() + "' AND username = '" + t1.getText() + "' ";
-                // database matthi data lai aavse and ResultSet class no abject return kare so we have to store somewhere
                 ResultSet rs = c.s.executeQuery(sql);
                 while (rs.next()) {
-                    //getString thi value nikdse database ni colomn mathi
+                    //getString for get value from database
                     t5.setText(rs.getString("password"));
                 }
             }catch (Exception e) {}
