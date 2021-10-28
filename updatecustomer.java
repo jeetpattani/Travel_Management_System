@@ -13,8 +13,6 @@ public class updatecustomer extends JFrame implements ActionListener {
 
     updatecustomer(String username){
 
-
-
         setBounds(450,200,800,500);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
@@ -140,23 +138,10 @@ public class updatecustomer extends JFrame implements ActionListener {
         }
 
 
-
-
-
-
-
-
-
-
-
-
         ButtonGroup bg= new ButtonGroup();
         bg.add(r1);
         bg.add(r2);
     }
-
-
-
 
     @Override
     public void actionPerformed(ActionEvent ae) {
