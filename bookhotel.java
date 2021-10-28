@@ -194,7 +194,6 @@ public class bookhotel extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 conn c = new conn();
 
-
                 try{
                     String s1 = c1.getSelectedItem();
 
@@ -227,8 +226,6 @@ public class bookhotel extends JFrame {
 
         getContentPane().setBackground(Color.WHITE);
     }
-
-
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
