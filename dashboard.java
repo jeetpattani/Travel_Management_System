@@ -9,7 +9,7 @@ public class dashboard extends JFrame implements ActionListener {
     String username;
     dashboard(String username){
         this.username=username;
-        setExtendedState(JFrame.MAXIMIZED_BOTH);//screen size mujab fit kri dese frame ne
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         JPanel p1= new JPanel();
         p1.setBounds(0,0,1534,65);
