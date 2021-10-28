@@ -10,13 +10,8 @@ public  class login extends JFrame implements ActionListener {
     JPasswordField t2;
 
     login(){
-//        setSize(300,300);
-//        setLocation(100,100);
-
-
-
-
-        setLayout(null);//by default borderLayout mujab mede set kre,bija => FlowLayout,Grid,GridLayout
+        
+        setLayout(null);
         getContentPane().setBackground(Color.WHITE);
         setBounds(430,200,780,400);
 
