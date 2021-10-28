@@ -7,11 +7,11 @@ public class conn {
     Statement s;
 
     public conn(){
-        try{//com.mysql.jdbc.Driver
+        try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            //connection string che connection mate
+            //connection string for connection
             c = DriverManager.getConnection("jdbc:mysql://localhost:3309/tms","root","");
-            s = c.createStatement();        //com.mysql.jdbc.Driver-> deprecated,  new is -> com.mysql.cj.jdbc.Driver
+            s = c.createStatement();        //com.mysql.jdbc.Driver-> deprecated,  new one is -> com.mysql.cj.jdbc.Driver
 
         }catch(Exception e){
             System.out.println( e );
