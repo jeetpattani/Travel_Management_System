@@ -12,7 +12,6 @@ public class about extends JFrame implements ActionListener {
         setLayout(null);
         getContentPane().setBackground(Color.white);
 
-
         JButton b1 = new JButton("Exit");
         add(b1);
         b1.setBounds(180, 430, 120, 20);
@@ -72,7 +71,5 @@ public class about extends JFrame implements ActionListener {
     public static void main(String[] args) {
         new about().setVisible(true);
     }
-
-
 
 }
