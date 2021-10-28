@@ -129,28 +129,14 @@ public class addCustomer extends JFrame implements ActionListener {
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
         ButtonGroup bg= new ButtonGroup();
         bg.add(r1);
         bg.add(r2);
     }
 
 
-
-
     @Override
     public void actionPerformed(ActionEvent ae) {
-
 
         if(ae.getSource()==b1) {
             String username = t1.getText();
@@ -165,7 +151,6 @@ public class addCustomer extends JFrame implements ActionListener {
         } else if (r2.isSelected()) {
             radio = "Female";
         }
-
 
             String country = t4.getText();
             String address = t5.getText();
@@ -184,18 +169,11 @@ public class addCustomer extends JFrame implements ActionListener {
                 e.printStackTrace();
             }
 
-
-
         }else if(ae.getSource() == b2){
             this.setVisible(false);
         }
-
-
-
     }
-
-
-
+    
     public static void main(String[] args) {
         new addCustomer("").setVisible(true);
 
